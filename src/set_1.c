@@ -279,6 +279,7 @@ void set_1_challenge_7()
 err:
 	printf(print, "FAIL");
 cleanup:
+	free(base64);
 	free(data);
 	free(decrypted);
 
